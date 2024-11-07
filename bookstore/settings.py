@@ -128,5 +128,31 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Registration
 ACCOUNT_ACTIVATION_DAYS = 7
 REGISTRATION_AUTO_LOGIN = True
+LOGIN_REDIRECT_URL = '/store/'  # where to redirect the user upon login 
 
 SITE_ID = 1
+
+# Social Auth - Facebook key and secret (username, password)
+
+SOCIAL_AUTH_FACEBOOK_KEY = '545739448165922'
+
+SOCIAL_AUTH_FACEBOOK_SECRET = '2dcd22dba97a4f2a7fcf5d8f68f54f66'
+
+
+ 
+
+# Email settings
+
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+
+EMAIL_HOST = "smtp.gmail.com"
+
+EMAIL_HOST_USER = "youremail@gmail.com"
+
+EMAIL_HOST_PASSWORD = "123456"
+
+EMAIL_PORT = 587   # you have to use SSL or TLS
+
+EMAIL_USE_TLS = True 
+
+DEFAULT_FROM_EMAIL = "books@mysterybooks.com"
